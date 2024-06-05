@@ -130,6 +130,10 @@ input::-webkit-inner-spin-button {
   text-align: right;
   color: #FFFFFF;
 }
+.card-aayy {
+  display: flex;
+  flex-direction: row;
+}
 form {
   display: flex;
   flex-direction: column;

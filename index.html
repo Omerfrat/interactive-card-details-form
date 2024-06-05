@@ -26,7 +26,10 @@
             <p id="cc-number">1234 5678 9123 0000</p>
             <div class="cc-info-name">
               <p id="card-name">ömer fırat</p>
-              <p id="card-expiry">00/00</p>
+              <label class="card-aayy">
+                <p id="card-aa">00</p>
+                <p id="card-yy">/00</p>
+              </label>
             </div>
           </div>
         </div>
@@ -46,23 +49,23 @@
     <form>
       <label>
         <p>Kart Sahibinin Adı</p>
-        <input type="text" class="card-name1" placeholder="ömer fırat">
+        <input type="text" class="card-name1" placeholder="ömer fırat" oninput="myFunction()">
       </label>
       <label>
         <p>Kart numarası</p>
-      <input type="number" class="card-number1" placeholder="4012 8888 8888 1881" maxlength="19">
+      <input type="number" class="card-number1" placeholder="4012 8888 8888 1881" oninput="myFunction()" maxlength="19">
       </label>
       <div class="aa-yy-cvc-flex">
         <div class="aa-yy">
           <p>VALID THRU (AA/YY)</p>
           <label class="aa-yy-label">
-            <input type="number" class="card-expiry1" placeholder="04/22">
-            <input type="number" class="card-expiry1" placeholder="04/22">
+            <input type="number" oninput="myFunction()" class="card-expiry1" id="aa" placeholder="04/22">
+            <input type="number" oninput="myFunction()" class="card-expiry1" id="yy" placeholder="04/22">
           </label>
         </div>
         <label id="cvc-label">
           <p>CVC</p>
-          <input type="number" class="card-cvc" placeholder="321">
+          <input type="number" oninput="myFunction()" class="card-cvc" placeholder="321">
         </label>
       </div>
       <button id="submit">Confirm</button>
