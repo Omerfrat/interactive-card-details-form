@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Interactive Card Details Form</title>
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <script src="assets/js/app.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  
+  <div class="container">
+
+    <div class="bc">
+      <div class="card-detaily">
+        <div class="credit-card-front">
+          <div class="symbol">
+            <div class="top"></div>
+            <div class="bos-top"></div>
+          </div>
+          <div class="cc-info">
+            <p id="cc-number">1234 5678 9123 0000</p>
+            <div class="cc-info-name">
+              <p id="card-name">ömer fırat</p>
+              <p id="card-expiry">00/00</p>
+            </div>
+          </div>
+        </div>
+        <div class="credit-card-back">
+          <div class="cc-black"></div>
+          <div class="cc-cvc">
+            <p id="cvc">
+              000
+            </p>
+          </div>
+          <img src="assets/img/card-arka.png" alt="">
+        </div>
+      </div>
+      
+    </div>
+
+    <form>
+      <label>
+        <p>Kart Sahibinin Adı</p>
+        <input type="text" class="card-name1" placeholder="ömer fırat">
+      </label>
+      <label>
+        <p>Kart numarası</p>
+      <input type="number" class="card-number1" placeholder="4012 8888 8888 1881" maxlength="19">
+      </label>
+      <div class="aa-yy-cvc-flex">
+        <div class="aa-yy">
+          <p>VALID THRU (AA/YY)</p>
+          <label class="aa-yy-label">
+            <input type="number" class="card-expiry1" placeholder="04/22">
+            <input type="number" class="card-expiry1" placeholder="04/22">
+          </label>
+        </div>
+        <label id="cvc-label">
+          <p>CVC</p>
+          <input type="number" class="card-cvc" placeholder="321">
+        </label>
+      </div>
+      <button id="submit">Confirm</button>
+    </form>
+
+  </div>
+
+
+
 </body>
+
 </html>
