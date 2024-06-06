@@ -42,7 +42,7 @@ input::-webkit-inner-spin-button {
 }
 
 .bc {
-  background-image: url(/interactive-card-details-form/assets/img/bc.png);
+  background-image: url(/assets/img/bc.png);
   width: 483px;
   background-repeat: no-repeat;
   padding-block: 187px;
@@ -58,7 +58,7 @@ input::-webkit-inner-spin-button {
 }
 
 .credit-card-front {
-  background-image: url(/interactive-card-details-form/assets/img/card.png);
+  background-image: url(/assets/img/card.png);
   background-repeat: no-repeat;
   padding: 28px 32px;
   display: flex;
