@@ -79,8 +79,9 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  border-radius: 8px;
   gap: 37px;
+
 }
 
 .credit-card-front {
@@ -91,6 +92,7 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   gap: 64px;
   border-radius: 8px;
+  height: 245px;
 }
 
 .symbol {
@@ -273,14 +275,15 @@ input:focus {
   .bc {
     height: 240px;
     padding: 23px 16px 0 16px;
+    width: 375px;
   }
 
   .card-detaily {
     width: 343px;
     height: 251px;
-    left: 30px;
     position: relative;
     justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .credit-card-back {
