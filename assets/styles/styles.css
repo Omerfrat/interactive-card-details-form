@@ -1,39 +1,64 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
 }
-html, body {
+
+html,
+body {
   height: 100%;
 }
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-img, picture, video, canvas, svg {
+
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
-input, button, textarea, select {
+
+input,
+button,
+textarea,
+select {
   font: inherit;
   cursor: pointer;
   outline: none;
 }
-p, h1, h2, h3, h4, h5, h6 {
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
   font-family: "Space Grotesk", sans-serif;
 }
-#root, #__next {
+
+#root,
+#__next {
   isolation: isolate;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-    margin: 0; 
-  }
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-.container{
+.container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -48,6 +73,7 @@ input::-webkit-inner-spin-button {
   padding-block: 187px;
   padding-left: 167px;
 }
+
 .card-detaily {
   width: 541px;
   display: flex;
@@ -66,11 +92,13 @@ input::-webkit-inner-spin-button {
   gap: 64px;
   border-radius: 8px;
 }
+
 .symbol {
   display: flex;
   align-items: center;
   gap: 16px;
 }
+
 .top {
   position: relative;
   width: 46px;
@@ -79,18 +107,22 @@ input::-webkit-inner-spin-button {
   border: 1px solid #FFFFFF;
   border-radius: 50%;
 }
+
 .bos-top {
   width: 21.13px;
   height: 21.15px;
   border: 1px solid #FFFFFF;
   border-radius: 50%;
 }
+
 .cc-info {
   display: flex;
   flex-direction: column;
 }
-.cc-info-name{
+
+.cc-info-name {
   width: 383px;
+  height: 21px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -98,12 +130,15 @@ input::-webkit-inner-spin-button {
   color: #FFFFFF;
   text-transform: uppercase;
 }
+
 #cc-number {
   font-size: 28px;
   text-align: left;
   letter-spacing: 3.42px;
-  color:#FFFFFF;
+  color: #FFFFFF;
+  height: 42px;
 }
+
 .credit-card-back {
   position: relative;
   width: 447px;
@@ -123,19 +158,23 @@ input::-webkit-inner-spin-button {
   margin-top: 23px;
   background-color: #2F2F2F;
 }
+
 .cc-cvc {
   width: 361px;
+  height: 44px;
   padding: 10px 16px 10px 0;
   background-color: #ADB5BE;
   text-align: right;
   color: #FFFFFF;
 }
+
 .card-aayy {
   display: flex;
   flex-direction: row;
 }
+
 form {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 381px;
   gap: 20px;
@@ -148,29 +187,35 @@ form {
   text-align: left;
   outline: none;
 }
+
 label {
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
+
 .aa-yy-label {
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
+
 .aa-yy-cvc-flex {
   display: flex;
   width: 100%;
   gap: 20px;
 }
+
 .aa-yy {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.card-expiry1{
+
+.card-expiry1 {
   width: 80px;
 }
-.card-cvc{
+
+.card-cvc {
   width: 191px;
 }
 
@@ -181,6 +226,7 @@ flex-direction: row;
   background-color: #21092F;
   border-radius: 8px;
 }
+
 input {
   padding: 15px 0 15px 16px;
   border: 1px solid #DFDEE0;
@@ -191,8 +237,135 @@ input {
 }
 
 input:focus {
-  border: 1px solid #610595; 
+  border: 1px solid #610595;
   text-decoration: #21092F;
   opacity: 100%;
   font-size: 18px;
+}
+
+.thanks {
+  width: 381px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.thanks button {
+  margin-top: 13px;
+  width: 381px;
+  color: white;
+  background-color: rgba(33, 9, 47, 1);
+  padding-block: 15px;
+  border: none;
+  border-radius: 8px;
+}
+
+
+
+@media (width <=375px) {
+  .container {
+    width: 375px;
+    flex-direction: column;
+  }
+
+  .bc {
+    height: 240px;
+    padding: 23px 16px 0 16px;
+  }
+
+  .card-detaily {
+    width: 343px;
+    height: 251px;
+    left: 30px;
+    position: relative;
+    justify-content: flex-start;
+  }
+
+  .credit-card-back {
+    width: 286px;
+    height: 157px;
+    gap: 15px;
+    border-radius: 8px;
+    position: relative;
+    left: 53px;
+    padding-bottom: 62px;
+    z-index: 1;
+    margin: 0;
+  }
+  .credit-card-back img {
+    display: none;
+  }
+
+  .cc-cvc {
+    width: 230px;
+    font-size: 9px;
+    height: auto;
+    padding: 9px 10px 9px 0;
+    letter-spacing: 1.29px;
+  }
+
+  .cc-black {
+    height: 34px;
+  }
+
+  .credit-card-front {
+    width: 286px;
+    background-image: url("/assets/img/card.png");
+    background-repeat: no-repeat;
+    padding: 17px 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 37px;
+    color: white;
+    border-radius: 8px;
+    position: absolute;
+    top: 94px;
+    z-index: 2;
+  }
+  #cc-number {
+    font-size: 18px;
+    width: 239px;
+    letter-spacing: 2.2px;
+  }
+  .cc-info-name {
+    font-size: 9px;
+    width: 245px;
+  }
+  form {
+    margin-top: 91px;
+    width: 327px;
+    font-size: 12px;
+  }
+  .card-cvc {
+    width: 164px;
+  }
+  .aa-yy {
+    width: 152px;
+  }
+  .aa-yy-cvc-flex {
+    gap: 8px;
+    width: 327px;
+  }
+  .card-expiry1 {
+    width: 72px;
+  }
+  .thanks {
+    position: relative;
+    top: 91px;
+    width: 327px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .thanks button {
+    margin-top: 13px;
+    width: 327px;
+  }
 }
