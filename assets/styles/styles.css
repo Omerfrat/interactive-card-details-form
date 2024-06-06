@@ -174,7 +174,7 @@ input::-webkit-inner-spin-button {
 }
 
 form {
-  display: none;
+  display: flex;
   flex-direction: column;
   width: 381px;
   gap: 20px;
@@ -246,7 +246,7 @@ input:focus {
 .thanks {
   width: 381px;
   margin: auto;
-  display: flex;
+  display: none;
   align-items: center;
   flex-direction: column;
   gap: 35px;
@@ -358,7 +358,7 @@ input:focus {
     top: 91px;
     width: 327px;
     margin: auto;
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
     gap: 35px;
